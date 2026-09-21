@@ -1,0 +1,105 @@
+name: Bug report
+description: Something in Jolt does not work, or works in a way it should not.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. The more exactly a bug is described, the sooner it is fixed.
+
+        A security issue does not belong here — see [SECURITY.md](https://github.com/InsaneArts/jolt-app/blob/main/SECURITY.md).
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what Jolt did, and what you expected instead.
+      placeholder: |
+        I typed "my disk is full" in the Mac scope. The Storage pane opened, but the ring never appeared.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Number them, starting from an open launcher. If it only happens sometimes, say how often.
+      placeholder: |
+        1. Open Safari.
+        2. Press Option-Space.
+        3. Type "close every tab".
+        4. Press Return.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Which scope
+      description: Tab switches between them. Pick the one that was open.
+      options:
+        - Menus (the app you are in)
+        - Mac (apps, settings, actions)
+        - Files
+        - Web search
+        - Settings or the bolt menu
+        - Updating, licensing, or the trial
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: query
+    attributes:
+      label: The query you typed
+      description: Leave out anything private. If it was a file search, a made-up filename that shows the same problem is fine.
+      placeholder: close every tab
+
+  - type: input
+    id: jolt-version
+    attributes:
+      label: Jolt version
+      description: The bolt menu → About, or Settings. Include the build number if it is shown.
+      placeholder: 0.2.0 (92)
+    validations:
+      required: true
+
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version and Mac
+      description: "Apple menu → About This Mac."
+      placeholder: macOS 26.0, MacBook Pro M3
+    validations:
+      required: true
+
+  - type: input
+    id: app
+    attributes:
+      label: Which app was in front
+      description: Only for the menu scope. Include its version if you know it.
+      placeholder: Xcode 26.0
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log output
+      description: |
+        Optional, and the fastest way to a fix. Run this in Terminal, reproduce the bug, then paste what appeared:
+
+        ```sh
+        log stream --predicate 'subsystem == "dev.gomareli.jolt"'
+        ```
+
+        Jolt writes no queries to its log. Read what you paste before you paste it.
+      render: text
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send
+      options:
+        - label: I am on the latest version of Jolt, or I said above why I am not.
+          required: true
+        - label: I searched the open issues and this is not one of them.
+          required: true

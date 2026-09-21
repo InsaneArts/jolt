@@ -1,0 +1,73 @@
+name: Wrong result for a query
+description: Jolt found the wrong command, ranked it badly, or found nothing at all.
+labels: ["wrong result"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Jolt is not broken when it misunderstands you — it is wrong about one query, which is a different thing and usually a cheaper fix. These reports are the most useful ones we get.
+
+  - type: input
+    id: query
+    attributes:
+      label: What you typed
+      placeholder: bring back the tab I just closed
+    validations:
+      required: true
+
+  - type: input
+    id: expected
+    attributes:
+      label: The row you expected
+      description: The name of the command, and its menu path if it is a menu item.
+      placeholder: History › Reopen Last Closed Tab
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What Jolt showed
+      description: The first few rows, in order, with their probabilities if they carry one. "Nothing" is an answer.
+      placeholder: |
+        1. File › Close Tab — 41%
+        2. History › Show All History — 22%
+        3. (nothing else)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Which scope
+      options:
+        - Menus (the app you are in)
+        - Mac (apps, settings, actions)
+        - Files
+        - Web search
+        - Actions of scriptable apps
+    validations:
+      required: true
+
+  - type: input
+    id: app
+    attributes:
+      label: Which app was in front
+      description: Only for the menu scope, and for actions of scriptable apps.
+      placeholder: Safari 26.0
+
+  - type: input
+    id: jolt-version
+    attributes:
+      label: Jolt version
+      placeholder: 0.2.0 (92)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send
+      options:
+        - label: The command I expected exists and was enabled at the time — not greyed out, and not behind a document that was not open.
+          required: true
