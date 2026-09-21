@@ -62,4 +62,6 @@ Jolt writes no query to disk and logs none. It stores only the counts of what yo
 - **A question, or an idea to talk through** → [Discussions](https://github.com/InsaneArts/jolt-app/discussions)
 - **A security issue** → [SECURITY.md](SECURITY.md), not a public issue
 
+[CONTRIBUTING.md](CONTRIBUTING.md) says what makes a report easy to act on.
+
 Jolt is made by [InsaneArts](https://github.com/InsaneArts).
