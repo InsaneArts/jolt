@@ -39,11 +39,9 @@ body:
       description: Tab switches between them. Pick the one that was open.
       options:
         - Menus (the app you are in)
-        - Mac (apps, settings, actions)
-        - Files
-        - Web search
-        - Settings or the bolt menu
-        - Updating, licensing, or the trial
+        - Mac (apps, settings, and actions)
+        - The panel, the hotkey, or the keyboard
+        - The bolt menu, or updating
         - Not sure
     validations:
       required: true

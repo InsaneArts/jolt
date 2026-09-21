@@ -8,35 +8,56 @@ This repository is where Jolt is discussed in public: bug reports, feature reque
 
 ## What Jolt does
 
-Press `[`, Option-Space, or Control-Option-J. Type, move with the arrow keys, press Return to run the row. Tab switches between three scopes.
+This describes **0.2.0**, the current release. Jolt is early, and the changelog is where each version says what changed.
 
-**The menus of the app you are in.** "wipe the old compiled files" in Xcode presses Product › Clean Build Folder. A row shows its menu path and its keyboard shortcut.
+Press `[`, Option-Space, or Control-Option-J. Type, move with the arrow keys, press Return to run the row. Escape closes the panel. Tab switches between two scopes.
 
-**The commands of the Mac.** Installed apps, System Settings panes, and built-in actions. "my disk is full" finds the Storage pane, and Jolt opens it, scrolls to the row, and puts a ring on it. Actions that take a value read it from the query: "keep awake for 35 minutes", "volume 20", "screenshot window in 5s". Scriptable apps bring their own actions: "spotify next", "dark mode on".
+**The menus of the app you are in.** "wipe the old compiled files" in Xcode presses Product › Clean Build Folder. Other launchers match menu items by name only. A row shows its menu path and its keyboard shortcut.
 
-**Your files.** "my resume" finds `Tornike_CV_2026.pdf`; "all my movies" lists the films and leaves out the screen recordings. Files are indexed only in folders you pick yourself.
+**The commands of the Mac.** Your installed apps, the System Settings panes, and a few actions. "my disk is full" finds the Storage pane — and Jolt then shows you where the setting is: it opens the pane, scrolls to the row, and puts a ring on it for three seconds. It does the same in the settings window of an app that has a sidebar.
 
-The Mac scope also searches the web. "watch the new dune trailer" finds YouTube, "directions to heydar aliyev center" finds Google Maps, and bangs work as in DuckDuckGo: `!yt lofi beats`, `alan turing !w`.
+Jolt counts what you run. The count breaks ties, and an empty query lists what you run most.
 
-The understanding comes from [Jev](https://typesafe.ai), TypeSafe's System One model. Jolt asks it one multiple-choice question whose options are every command, and reads back a probability for each. The name match never waits for it: every keystroke matches names locally in microseconds, and Jev's answer arrives about a third of a second later.
+The understanding comes from [Jev](https://typesafe.ai), TypeSafe's System One model. Jolt asks it one multiple-choice question whose options are every command, and reads back a probability for each. The name match never waits for it: every keystroke matches names locally in microseconds, and Jev's answer arrives about a third of a second later, on its own.
 
 ## Download
 
-Every release is on the [releases page](https://github.com/InsaneArts/jolt-app/releases), newest first. Take the `.dmg`, open it, and drag Jolt to Applications. The `.zip` beside it is what Sparkle downloads when Jolt updates itself; you do not need it.
+Every release is on the [releases page](https://github.com/InsaneArts/jolt-app/releases), newest first. Take the `.dmg`, open it, and drag Jolt to Applications. The `.zip` beside it holds the same build in the form Sparkle installs an update in; you do not need it to install Jolt.
+
+Jolt has no Dock icon. Look for the bolt in the menu bar.
 
 ## Requirements
 
-macOS 14 or later. A release build updates itself with Sparkle and checks for updates once a day. Jolt needs Accessibility permission to read the menus of other apps; without it, it opens on the commands of the Mac.
+macOS 14 or later.
 
-An active trial or license is required to open the launcher. The 14-day trial needs no email and no key.
+**Accessibility permission.** Jolt reads the menus of other apps through the Accessibility API and presses the item you choose. It reads the rows of a System Settings pane the same way. Allow it in System Settings › Privacy & Security › Accessibility, or from the bolt menu. Without the permission, Jolt opens on the commands of the Mac.
 
-## Privacy
+**A [TypeSafe](https://typesafe.ai) API key, for plain-language search.** In 0.2.0 you bring your own key, in a file that only you can read:
 
-Jolt writes no query to disk and logs none. Queries shorter than three characters stay on the Mac, as do one- and two-word name prefixes. File contents, sizes, and dates are never sent. Menu titles that look like documents or addresses — recent files, browser tabs — stay on the Mac by default. The full account of what leaves your Mac, scope by scope, is on [usejolt.app](https://usejolt.app).
+```sh
+mkdir -p ~/Library/Application\ Support/Jolt
+printf '%s' "apikey_..." > ~/Library/Application\ Support/Jolt/api-key
+chmod 600 ~/Library/Application\ Support/Jolt/api-key
+```
+
+Without a key Jolt still works, as a launcher that matches names.
+
+## Updates
+
+A release build updates itself with [Sparkle](https://sparkle-project.org). It checks once a day, and the bolt menu has Check for Updates. The update request holds the version of Jolt and nothing about you.
+
+## What leaves your Mac
+
+When Jolt asks Jev, the request goes to the TypeSafe API. In the menu scope it holds your query, the name of the app, and the titles of the app's enabled menu items — and a menu title can be the name of a recent document or a browser tab. In the Mac scope it holds your query, the names of your installed apps, and the built-in list of panes and actions. When Jolt shows a row of a System Settings pane, a second request holds your query, the name of the pane, and the labels of its rows; for the settings window of an app, one more holds the names of its sidebar sections. A label can be the name of an app, a network, or a device.
+
+A query of one or two words that is a name prefix stays on the Mac. So does a query shorter than three characters, and everything when there is no API key.
+
+Jolt writes no query to disk and logs none. It stores only the counts of what you run.
 
 ## Getting help
 
 - **Something is broken** → [open a bug report](https://github.com/InsaneArts/jolt-app/issues/new/choose)
+- **Jolt found the wrong command** → [report the query](https://github.com/InsaneArts/jolt-app/issues/new/choose), with the row you expected
 - **Something is missing** → [open a feature request](https://github.com/InsaneArts/jolt-app/issues/new/choose)
 - **A question, or an idea to talk through** → [Discussions](https://github.com/InsaneArts/jolt-app/discussions)
 - **A security issue** → [SECURITY.md](SECURITY.md), not a public issue

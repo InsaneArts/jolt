@@ -6,7 +6,7 @@ Report it privately, through [GitHub's private vulnerability reporting](https://
 
 Please include what an attacker gains, the steps to reproduce it, the version of Jolt and of macOS, and anything that narrows down where it lives. A proof of concept helps.
 
-You will get a first reply within a few days. If the report holds, you will be told when a fix ships, and credited in the release notes unless you would rather not be.
+Reports are read by the maintainers of Jolt. If one holds, you will be told when a fix ships, and credited in the release notes unless you would rather not be.
 
 ## Supported versions
 
@@ -14,22 +14,22 @@ Only the latest release. Jolt updates itself and checks for updates once a day, 
 
 ## What is in scope
 
-Jolt itself and the backend it talks to: the launcher, the companion, the update mechanism, licensing, and the API at the address a release build is built against.
+The released Jolt app: the launcher, what it reads through the Accessibility API, what it sends to the TypeSafe API, and the update mechanism.
 
 Some things that would be interesting:
 
-- Making Jolt run something it should never offer, such as a command the [capability policy](https://usejolt.app) excludes.
-- Getting query text, menu titles, filenames, or file contents off a Mac in a way the privacy rules say should not happen.
+- Making Jolt run something it should never offer, or run a command with a value it should have refused.
+- Getting query text or menu titles off a Mac in a way "What leaves your Mac" in the README says should not happen.
 - Getting an update installed that was not signed with Jolt's EdDSA key, or otherwise subverting Sparkle.
-- Forging, extending, or transferring a license or trial; reading another installation's credentials out of the Keychain.
-- Anything a scripting dictionary of a third-party app can make Jolt do that Jolt does not intend.
+- Reading credentials, such as the TypeSafe API key, out of a place only Jolt should reach.
+- Anything another app on the Mac can make Jolt do that Jolt does not intend.
 
 ## What is not in scope
 
 - Reports produced only by a scanner, with no working attack behind them.
 - Missing hardening that leads nowhere on its own.
 - Attacks that need an already-compromised Mac, physical access with the screen unlocked, or admin rights you already have.
-- Denial of service by volume against the backend.
+- Denial of service by volume against the TypeSafe API.
 - Bugs in macOS itself, or in Apple's APIs, that Jolt only passes through.
 
-Do not test against other people's Macs, other people's licenses, or the production backend at a rate that affects anyone else. Test against your own installation.
+Do not test against other people's Macs, and do not hammer the TypeSafe API. Test against your own installation, with your own key.

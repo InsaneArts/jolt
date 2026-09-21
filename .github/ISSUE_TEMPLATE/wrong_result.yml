@@ -42,10 +42,7 @@ body:
       label: Which scope
       options:
         - Menus (the app you are in)
-        - Mac (apps, settings, actions)
-        - Files
-        - Web search
-        - Actions of scriptable apps
+        - Mac (apps, settings, and actions)
     validations:
       required: true
 
@@ -53,7 +50,7 @@ body:
     id: app
     attributes:
       label: Which app was in front
-      description: Only for the menu scope, and for actions of scriptable apps.
+      description: Only for the menu scope.
       placeholder: Safari 26.0
 
   - type: input

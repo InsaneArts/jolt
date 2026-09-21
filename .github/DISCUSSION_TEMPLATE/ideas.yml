@@ -28,11 +28,8 @@ body:
       label: Which part of Jolt
       options:
         - Menus (the app you are in)
-        - Mac (apps, settings, actions)
-        - Files
-        - Web search
-        - Actions of scriptable apps
-        - Settings, the panel, or the keyboard
-        - Something new
+        - Mac (apps, settings, and actions)
+        - The panel, the hotkey, or the keyboard
+        - Something Jolt does not do at all
     validations:
       required: true
