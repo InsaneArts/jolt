@@ -2,7 +2,7 @@
 
 Jolt is a macOS launcher that understands plain language. Type an app name and it behaves like any launcher. Say what you want instead — "why is my fan so loud", "bring back the tab I just closed" — and Jolt finds the command that does it, even when no word of the query is in the command's name.
 
-**[usejolt.app](https://usejolt.app)** · [Download](https://usejolt.app) · [Changelog](CHANGELOG.md) · [Discussions](https://github.com/InsaneArts/jolt-app/discussions) · [Report a bug](https://github.com/InsaneArts/jolt-app/issues/new/choose)
+**[usejolt.app](https://usejolt.app)** · [Download the latest release](https://github.com/InsaneArts/jolt-app/releases/latest) · [Changelog](CHANGELOG.md) · [Discussions](https://github.com/InsaneArts/jolt-app/discussions) · [Report a bug](https://github.com/InsaneArts/jolt-app/issues/new/choose)
 
 This repository is where Jolt is discussed in public: bug reports, feature requests, questions, and the changelog. Jolt's source code lives elsewhere and is not part of this repository.
 
@@ -19,6 +19,10 @@ Press `[`, Option-Space, or Control-Option-J. Type, move with the arrow keys, pr
 The Mac scope also searches the web. "watch the new dune trailer" finds YouTube, "directions to heydar aliyev center" finds Google Maps, and bangs work as in DuckDuckGo: `!yt lofi beats`, `alan turing !w`.
 
 The understanding comes from [Jev](https://typesafe.ai), TypeSafe's System One model. Jolt asks it one multiple-choice question whose options are every command, and reads back a probability for each. The name match never waits for it: every keystroke matches names locally in microseconds, and Jev's answer arrives about a third of a second later.
+
+## Download
+
+Every release is on the [releases page](https://github.com/InsaneArts/jolt-app/releases), newest first. Take the `.dmg`, open it, and drag Jolt to Applications. The `.zip` beside it is what Sparkle downloads when Jolt updates itself; you do not need it.
 
 ## Requirements
 
