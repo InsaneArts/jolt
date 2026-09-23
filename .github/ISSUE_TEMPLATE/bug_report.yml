@@ -40,6 +40,7 @@ body:
       options:
         - Menus (the app you are in)
         - Mac (apps, settings, and actions)
+        - Files (the folders you chose)
         - The panel, the hotkey, or the keyboard
         - The bolt menu, or updating
         - Not sure
@@ -58,7 +59,7 @@ body:
     attributes:
       label: Jolt version
       description: The bolt menu → About, or Settings. Include the build number if it is shown.
-      placeholder: 0.2.0 (92)
+      placeholder: 0.3.3 (116)
     validations:
       required: true
 

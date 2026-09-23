@@ -29,6 +29,7 @@ body:
       options:
         - Menus (the app you are in)
         - Mac (apps, settings, and actions)
+        - Files (the folders you chose)
         - The panel, the hotkey, or the keyboard
         - Something Jolt does not do at all
     validations:

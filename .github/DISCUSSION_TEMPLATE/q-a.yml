@@ -25,4 +25,4 @@ body:
     attributes:
       label: Jolt version
       description: Only if the answer could depend on it.
-      placeholder: 0.2.0 (92)
+      placeholder: 0.3.3 (116)

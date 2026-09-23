@@ -43,6 +43,7 @@ body:
       options:
         - Menus (the app you are in)
         - Mac (apps, settings, and actions)
+        - Files (the folders you chose)
     validations:
       required: true
 
@@ -57,7 +58,7 @@ body:
     id: jolt-version
     attributes:
       label: Jolt version
-      placeholder: 0.2.0 (92)
+      placeholder: 0.3.3 (116)
     validations:
       required: true
 
