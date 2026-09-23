@@ -175,10 +175,25 @@ No plugins. No setup for each app. Jolt reads what your Mac already has: the men
 
 Most commands have no keyboard shortcut. Simulator has 99 without one. Safari has 114. Xcode has 66. Stop hunting through menus — describe what you want and let Jolt find it.
 
-| | | |
-| :---: | :---: | :---: |
-| **26 µs**<br><sub>Name matching</sub> | **350 ms**<br><sub>Plain-language understanding</sub> | **31 of 31**<br><sub>Tested accuracy</sub> |
-| <sub>Matches your typing against 219 commands.</sub> | <sub>Median response from Jev. Most of that time is the network.</sub> | <sub>Short queries found the correct deep command across 8 apps.</sub> |
+<table>
+  <tr>
+    <td width="33%" align="center" valign="top">
+      <h3>26 µs</h3>
+      <b>Name matching</b><br>
+      <sub>Matches your typing against 219 commands.</sub>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <h3>350 ms</h3>
+      <b>Plain-language understanding</b><br>
+      <sub>Median response from Jev. Most of that time is the network.</sub>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <h3>31 of 31</h3>
+      <b>Tested accuracy</b><br>
+      <sub>Short queries found the correct deep command across 8 apps.</sub>
+    </td>
+  </tr>
+</table>
 
 The understanding comes from [Jev](https://typesafe.ai), TypeSafe's System One model. Jolt asks it one multiple-choice question whose options are every command, and reads back a probability for each. The name match never waits for it: every keystroke matches names locally in microseconds, and Jev's answer arrives about a third of a second later, on its own.
 
