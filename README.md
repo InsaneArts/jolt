@@ -207,13 +207,3 @@ A query of one or two words that is the start of a name never leaves your Mac, a
 - **A security issue** → [SECURITY.md](SECURITY.md), not a public issue
 
 [CONTRIBUTING.md](CONTRIBUTING.md) says what makes a report easy to act on.
-
-<br>
-
-<p align="center">
-  <a href="https://usejolt.app"><img src=".github/assets/icon.png" width="48" height="48" alt="Jolt"></a>
-  <br>
-  <sub>Your Mac already knows how. Just ask.</sub>
-  <br>
-  <sub>Jolt is made by <a href="https://github.com/InsaneArts">InsaneArts</a>.</sub>
-</p>
