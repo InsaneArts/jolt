@@ -15,6 +15,7 @@
 
 <p align="center">
   <a href="https://usejolt.app"><img src="https://img.shields.io/badge/Download_for_Mac-0a84ff?style=for-the-badge&logo=apple&logoColor=white" alt="Download for Mac"></a>
+  <a href="https://github.com/InsaneArts/jolt/releases/latest"><img src="https://img.shields.io/github/v/release/InsaneArts/jolt?style=for-the-badge&label=Latest&color=1c1c1e" alt="Latest release"></a>
 </p>
 
 <p align="center">
@@ -174,7 +175,7 @@ The understanding comes from [Jev](https://typesafe.ai), TypeSafe's System One m
 
 ## Download
 
-Download Jolt from [usejolt.app](https://usejolt.app). Open the `.dmg` and drag Jolt to Applications. Jolt is free during the beta, with no account, no license key, and no card. When the beta ends, every Mac gets a 7-day free trial.
+Download Jolt from [usejolt.app](https://usejolt.app), or take the `.dmg` of any version from the [releases page](https://github.com/InsaneArts/jolt/releases). Open it and drag Jolt to Applications. The `.zip` beside it is the same build in the form Sparkle installs an update in; you do not need it. Jolt is free during the beta, with no account, no license key, and no card. When the beta ends, every Mac gets a 7-day free trial.
 
 Jolt has no Dock icon. Look for the bolt in the menu bar. Press Command-Space to open it, or the shortcut you set in Settings › General (if Spotlight still has Command-Space, change one of the two). Type, and press Return to run the row. Escape closes the panel.
 
