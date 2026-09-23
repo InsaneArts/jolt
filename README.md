@@ -33,6 +33,13 @@
   <a href="https://usejolt.app"><img src=".github/assets/demos/hero.gif" width="100%" alt="Words to action: Jolt finding files and running commands across Mac apps"></a>
 </p>
 
+<p align="center">
+  <a href="#find-your-files">Find your files</a> ·
+  <a href="#tell-your-apps-what-to-do">Tell your apps what to do</a> ·
+  <a href="#control-your-mac">Control your Mac</a> ·
+  <a href="#make-it-yours">Make it yours</a>
+</p>
+
 This repository is where Jolt is discussed in public: bug reports, feature requests, questions, and the changelog. Jolt's source code lives elsewhere and is not part of this repository.
 
 ## See Jolt in action
@@ -116,30 +123,32 @@ Search Wikipedia, Reddit, or YouTube from Jolt. Say what you want and where to l
 
 ### Make it yours
 
-#### Three places to look. One panel.
-
-Press Tab to move between commands for the app in front, actions for your Mac, and file search. The selected tab always shows where Jolt is looking.
-
-<a href="https://usejolt.app/demos/search-scopes.mp4"><img src=".github/assets/demos/search-scopes.gif" width="100%" alt="Switching between the app, Mac, and Files tabs with Tab"></a>
-
-#### A Space away from your files
-
-With an empty search, press Space to jump into Files. Press Backspace while the search is empty to return to the tab you came from.
-
-<a href="https://usejolt.app/demos/files-shortcut.mp4"><img src=".github/assets/demos/files-shortcut.gif" width="100%" alt="Pressing Space on an empty search to jump into Files"></a>
-
-#### Start where you want
-
-Choose what Jolt shows when you open it: the app in front, Mac actions, or the tab you last used. Set your own shortcut to open Jolt here, too.
-
-<img src=".github/assets/demos/scope-on-open.png" width="100%" alt="Jolt General settings with Scope on open set to Last used, beside Front app and Mac, and a custom Open Jolt keyboard shortcut">
-
-#### A little color from the app you're in
-
-Move from Finder to your browser, terminal, or Slack. Jolt takes its tint from the app's icon and shows its name, so you can see which app you are controlling.
-
-<a href="https://usejolt.app/demos/app-colors.mp4"><img src=".github/assets/demos/app-colors.gif" width="100%" alt="Jolt taking its tint from the icon of the app in front"></a>
-<sub>▶ [Watch the full demo](https://usejolt.app/demos/app-colors.mp4) (0:22)</sub>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <b>Three places to look. One panel.</b><br>
+      Press Tab to move between commands for the app in front, actions for your Mac, and file search. The selected tab always shows where Jolt is looking.<br><br>
+      <a href="https://usejolt.app/demos/search-scopes.mp4"><img src=".github/assets/demos/search-scopes.gif" width="100%" alt="Switching between the app, Mac, and Files tabs with Tab"></a>
+    </td>
+    <td width="50%" valign="top">
+      <b>A Space away from your files</b><br>
+      With an empty search, press Space to jump into Files. Press Backspace while the search is empty to return to the tab you came from.<br><br>
+      <a href="https://usejolt.app/demos/files-shortcut.mp4"><img src=".github/assets/demos/files-shortcut.gif" width="100%" alt="Pressing Space on an empty search to jump into Files"></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <b>Start where you want</b><br>
+      Choose what Jolt shows when you open it: the app in front, Mac actions, or the tab you last used. Set your own shortcut to open Jolt here, too.<br><br>
+      <img src=".github/assets/demos/scope-on-open.png" width="100%" alt="Jolt General settings with Scope on open set to Last used, beside Front app and Mac, and a custom Open Jolt keyboard shortcut">
+    </td>
+    <td width="50%" valign="top">
+      <b>A little color from the app you're in</b><br>
+      Move from Finder to your browser, terminal, or Slack. Jolt takes its tint from the app's icon and shows its name, so you can see which app you are controlling.<br><br>
+      <a href="https://usejolt.app/demos/app-colors.mp4"><img src=".github/assets/demos/app-colors.gif" width="100%" alt="Jolt taking its tint from the icon of the app in front"></a>
+    </td>
+  </tr>
+</table>
 
 ## Works with every app
 
