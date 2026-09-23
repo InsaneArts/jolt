@@ -7,7 +7,7 @@ Jolt's source code is not in this repository, and pull requests are turned off. 
 **A bug.** Something does not work. [Open one](https://github.com/InsaneArts/jolt/issues/new/choose) with the steps, the version, and what you expected. Logs help most of all:
 
 ```sh
-log stream --predicate 'subsystem IN {"com.insanearts.jolt", "dev.gomareli.jolt"}'
+log stream --predicate 'subsystem == "com.insanearts.jolt"'
 ```
 
 Jolt writes no queries to its log. Read what you paste anyway, before you paste it.
