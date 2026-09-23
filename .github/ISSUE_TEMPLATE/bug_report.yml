@@ -87,7 +87,7 @@ body:
         Optional, and the fastest way to a fix. Run this in Terminal, reproduce the bug, then paste what appeared:
 
         ```sh
-        log stream --predicate 'subsystem == "dev.gomareli.jolt"'
+        log stream --predicate 'subsystem IN {"com.insanearts.jolt", "dev.gomareli.jolt"}'
         ```
 
         Jolt writes no queries to its log. Read what you paste before you paste it.
