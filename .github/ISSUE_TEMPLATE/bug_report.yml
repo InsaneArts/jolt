@@ -7,7 +7,7 @@ body:
       value: |
         Thanks for reporting. The more exactly a bug is described, the sooner it is fixed.
 
-        A security issue does not belong here — see [SECURITY.md](https://github.com/InsaneArts/jolt-app/blob/main/SECURITY.md).
+        A security issue does not belong here — see [SECURITY.md](https://github.com/InsaneArts/jolt/blob/main/SECURITY.md).
 
   - type: textarea
     id: what-happened

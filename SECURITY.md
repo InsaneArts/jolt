@@ -2,7 +2,7 @@
 
 ## Reporting a vulnerability
 
-Report it privately, through [GitHub's private vulnerability reporting](https://github.com/InsaneArts/jolt-app/security/advisories/new). Never in a public issue or discussion.
+Report it privately, through [GitHub's private vulnerability reporting](https://github.com/InsaneArts/jolt/security/advisories/new). Never in a public issue or discussion.
 
 Please include what an attacker gains, the steps to reproduce it, the version of Jolt and of macOS, and anything that narrows down where it lives. A proof of concept helps.
 

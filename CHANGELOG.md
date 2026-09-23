@@ -1,13 +1,13 @@
 # Changelog
 
-Every released version of Jolt, newest first, with the download on the [releases page](https://github.com/InsaneArts/jolt-app/releases). Jolt updates itself, so you are on the latest version unless you turned that off.
+Every released version of Jolt, newest first, with the download on the [releases page](https://github.com/InsaneArts/jolt/releases). Jolt updates itself, so you are on the latest version unless you turned that off.
 
-## [0.2.0](https://github.com/InsaneArts/jolt-app/releases/tag/v0.2.0) — 18 September 2026
+## [0.2.0](https://github.com/InsaneArts/jolt/releases/tag/v0.2.0) — 18 September 2026
 
 - Show the row that a query means: Jolt opens the System Settings pane, scrolls to the row, and puts a ring on it for three seconds. It does the same in the settings window of an app that has a sidebar.
 - Name the Control Center pane "Menu Bar" on macOS 26, and say in its hint that it hides the menu bar.
 
-## [0.1.0](https://github.com/InsaneArts/jolt-app/releases/tag/v0.1.0) — 18 September 2026
+## [0.1.0](https://github.com/InsaneArts/jolt/releases/tag/v0.1.0) — 18 September 2026
 
 The first release.
 

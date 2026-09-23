@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        If you are not yet sure what you want, [Discussions → Ideas](https://github.com/InsaneArts/jolt-app/discussions) is the better place to think it through.
+        If you are not yet sure what you want, [Discussions → Ideas](https://github.com/InsaneArts/jolt/discussions) is the better place to think it through.
 
   - type: textarea
     id: problem

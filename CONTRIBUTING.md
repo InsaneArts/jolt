@@ -4,7 +4,7 @@ Jolt's source code is not in this repository, so there is nothing here to send a
 
 ## The three kinds of report
 
-**A bug.** Something does not work. [Open one](https://github.com/InsaneArts/jolt-app/issues/new/choose) with the steps, the version, and what you expected. Logs help most of all:
+**A bug.** Something does not work. [Open one](https://github.com/InsaneArts/jolt/issues/new/choose) with the steps, the version, and what you expected. Logs help most of all:
 
 ```sh
 log stream --predicate 'subsystem == "dev.gomareli.jolt"'
@@ -14,7 +14,7 @@ Jolt writes no queries to its log. Read what you paste anyway, before you paste 
 
 **A wrong result.** Jolt understood you and picked the wrong command, or found nothing. This has its own form, because the useful part is the pair: what you typed, and the row you wanted. A wrong answer is usually fixed by telling Jolt what a command is for, which is a small change, so these get handled quickly.
 
-**A request.** Something Jolt should do and cannot. Say what you are trying to get done first, and the feature second — the task is the part that cannot be guessed. If it is still half-formed, [Discussions](https://github.com/InsaneArts/jolt-app/discussions) is the better room.
+**A request.** Something Jolt should do and cannot. Say what you are trying to get done first, and the feature second — the task is the part that cannot be guessed. If it is still half-formed, [Discussions](https://github.com/InsaneArts/jolt/discussions) is the better room.
 
 ## Before you open one
 

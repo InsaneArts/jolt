@@ -2,7 +2,7 @@
 
 Jolt is a macOS launcher that understands plain language. Type an app name and it behaves like any launcher. Say what you want instead — "why is my fan so loud", "bring back the tab I just closed" — and Jolt finds the command that does it, even when no word of the query is in the command's name.
 
-**[usejolt.app](https://usejolt.app)** · [Download the latest release](https://github.com/InsaneArts/jolt-app/releases/latest) · [Changelog](CHANGELOG.md) · [Discussions](https://github.com/InsaneArts/jolt-app/discussions) · [Report a bug](https://github.com/InsaneArts/jolt-app/issues/new/choose)
+**[usejolt.app](https://usejolt.app)** · [Download the latest release](https://github.com/InsaneArts/jolt/releases/latest) · [Changelog](CHANGELOG.md) · [Discussions](https://github.com/InsaneArts/jolt/discussions) · [Report a bug](https://github.com/InsaneArts/jolt/issues/new/choose)
 
 This repository is where Jolt is discussed in public: bug reports, feature requests, questions, and the changelog. Jolt's source code lives elsewhere and is not part of this repository.
 
@@ -22,7 +22,7 @@ The understanding comes from [Jev](https://typesafe.ai), TypeSafe's System One m
 
 ## Download
 
-Every release is on the [releases page](https://github.com/InsaneArts/jolt-app/releases), newest first. Take the `.dmg`, open it, and drag Jolt to Applications. The `.zip` beside it holds the same build in the form Sparkle installs an update in; you do not need it to install Jolt.
+Every release is on the [releases page](https://github.com/InsaneArts/jolt/releases), newest first. Take the `.dmg`, open it, and drag Jolt to Applications. The `.zip` beside it holds the same build in the form Sparkle installs an update in; you do not need it to install Jolt.
 
 Jolt has no Dock icon. Look for the bolt in the menu bar.
 
@@ -56,10 +56,10 @@ Jolt writes no query to disk and logs none. It stores only the counts of what yo
 
 ## Getting help
 
-- **Something is broken** → [open a bug report](https://github.com/InsaneArts/jolt-app/issues/new/choose)
-- **Jolt found the wrong command** → [report the query](https://github.com/InsaneArts/jolt-app/issues/new/choose), with the row you expected
-- **Something is missing** → [open a feature request](https://github.com/InsaneArts/jolt-app/issues/new/choose)
-- **A question, or an idea to talk through** → [Discussions](https://github.com/InsaneArts/jolt-app/discussions)
+- **Something is broken** → [open a bug report](https://github.com/InsaneArts/jolt/issues/new/choose)
+- **Jolt found the wrong command** → [report the query](https://github.com/InsaneArts/jolt/issues/new/choose), with the row you expected
+- **Something is missing** → [open a feature request](https://github.com/InsaneArts/jolt/issues/new/choose)
+- **A question, or an idea to talk through** → [Discussions](https://github.com/InsaneArts/jolt/discussions)
 - **A security issue** → [SECURITY.md](SECURITY.md), not a public issue
 
 [CONTRIBUTING.md](CONTRIBUTING.md) says what makes a report easy to act on.

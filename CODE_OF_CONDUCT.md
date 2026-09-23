@@ -12,6 +12,6 @@ This repository is for talking about Jolt. Keep it worth reading.
 
 ## Enforcement
 
-Comments that break these rules get edited or deleted, and accounts that keep breaking them are blocked from the repository. Report anything you see to the maintainers through a [private vulnerability report](https://github.com/InsaneArts/jolt-app/security/advisories/new) if it is sensitive, or by mentioning a maintainer if it is not. Reports are handled privately, and what you report is not shared with the person you report.
+Comments that break these rules get edited or deleted, and accounts that keep breaking them are blocked from the repository. Report anything you see to the maintainers through a [private vulnerability report](https://github.com/InsaneArts/jolt/security/advisories/new) if it is sensitive, or by mentioning a maintainer if it is not. Reports are handled privately, and what you report is not shared with the person you report.
 
 The decisions here are made by the maintainers of Jolt, and they are final.

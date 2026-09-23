@@ -5,7 +5,7 @@ body:
       value: |
         Please search the answered questions first — many are already there.
 
-        If Jolt is broken rather than unclear, [open a bug report](https://github.com/InsaneArts/jolt-app/issues/new/choose) instead.
+        If Jolt is broken rather than unclear, [open a bug report](https://github.com/InsaneArts/jolt/issues/new/choose) instead.
 
   - type: textarea
     id: question
