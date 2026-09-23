@@ -1,6 +1,6 @@
 # Contributing
 
-Jolt's source code is not in this repository, so there is nothing here to send a pull request against. What this repository takes is reports, and they are worth more than they sound: most of what Jolt gets wrong is one query away from being obvious, and only the person who typed it knows what they meant.
+Jolt's source code is not in this repository, and pull requests are turned off. What this repository takes is reports, and they are worth more than they sound: most of what Jolt gets wrong is one query away from being obvious, and only the person who typed it knows what they meant.
 
 ## The three kinds of report
 
@@ -22,7 +22,7 @@ Search first; the same query often comes up twice. Be on the latest release, or 
 
 ## What not to post
 
-No license keys, no API keys, no credentials. No filenames, screenshots, or logs that carry someone else's data, or yours. A made-up example that shows the same problem is always fine.
+No license keys, no credentials. No filenames, screenshots, or logs that carry someone else's data, or yours. A made-up example that shows the same problem is always fine.
 
 Security issues do not go in public at all: [SECURITY.md](SECURITY.md) says where they go.
 
