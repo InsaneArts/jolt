@@ -176,7 +176,7 @@ The understanding comes from [Jev](https://typesafe.ai), TypeSafe's System One m
 
 Download Jolt from [usejolt.app](https://usejolt.app). Open the `.dmg` and drag Jolt to Applications. Jolt is free during the beta, with no account, no license key, and no card. When the beta ends, every Mac gets a 7-day free trial.
 
-Jolt has no Dock icon. Look for the bolt in the menu bar. Press `[`, Option-Space, or Control-Option-J to open it, type, and press Return to run the row. Escape closes the panel.
+Jolt has no Dock icon. Look for the bolt in the menu bar. Press Command-Space to open it, or the shortcut you set in Settings › General (if Spotlight still has Command-Space, change one of the two). Type, and press Return to run the row. Escape closes the panel.
 
 A release build updates itself with [Sparkle](https://sparkle-project.org). It checks once a day, and the bolt menu has Check for Updates. The update request holds the version of Jolt and nothing about you.
 
@@ -184,7 +184,7 @@ A release build updates itself with [Sparkle](https://sparkle-project.org). It c
 
 A Mac with Apple Silicon and macOS 14 or later.
 
-**Accessibility permission.** Jolt reads the menus of other apps through the Accessibility API and presses the item you choose, the same way a screen reader does. Allow it in System Settings › Privacy & Security › Accessibility, or from the bolt menu. Without the permission, Jolt opens on the commands of the Mac.
+**Accessibility permission.** Jolt reads the menus of other apps through the Accessibility API and presses the item you choose, the same way a screen reader does. Allow it in System Settings › Privacy & Security › Accessibility, or with Grant in Jolt's panel or in Settings › General. Without the permission, Jolt opens on the commands of the Mac.
 
 The first time you run an action of an app, macOS asks whether Jolt may control that app. macOS also asks before Jolt reads a protected folder. Jolt never asks for Full Disk Access.
 
